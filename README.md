@@ -1,5 +1,9 @@
 # Last Mile Launch Readiness Program
 
+## Live Demo
+- Dashboard: https://last-mile-launch-readiness-programaz.streamlit.app
+- Repo: https://github.com/varkin10/last-mile-launch-readiness-program
+
 **A standardized operating model for launching multiple concurrent Last Mile delivery stations — built as a portfolio case study for Operations Program Manager / Last Mile Launch Manager roles.**
 
 This is not a software project. It's a launch program: a program charter, a standardized launch playbook, cross-functional governance (RACI/RAID), a Day 1 operational validation protocol, Weekly Business Review reporting, and a post-launch continuous-improvement process — applied to 5 simulated station launches. A lightweight Streamlit dashboard sits on top to make the underlying readiness data explorable; it supports the program, it isn't the point of it.
