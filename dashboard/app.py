@@ -11,7 +11,23 @@ import plotly.express as px
 import plotly.graph_objects as go
 from analytics import load_all, build_site_scorecard, department_readiness
 
-st.set_page_config(page_title="Last Mile Launch Readiness Program", layout="wide", page_icon="📦")
+st.set_page_config(page_title="Last Mile Launch Readiness Program", layout="wide", page_icon="📦",
+                    initial_sidebar_state="collapsed")
+
+# Mobile-friendly tweaks: tighter padding, smaller metric font, wrap tables
+st.markdown("""
+<style>
+@media (max-width: 768px) {
+    .block-container { padding-left: 1rem; padding-right: 1rem; padding-top: 2rem; }
+    [data-testid="stMetricValue"] { font-size: 1.4rem; }
+    [data-testid="stMetricLabel"] { font-size: 0.75rem; }
+    h1 { font-size: 1.5rem !important; }
+    h2 { font-size: 1.2rem !important; }
+    h3 { font-size: 1.05rem !important; }
+}
+.block-container { padding-top: 2rem; }
+</style>
+""", unsafe_allow_html=True)
 
 @st.cache_data
 def get_data():
