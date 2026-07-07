@@ -1,0 +1,56 @@
+validation_id,site_id,checklist_item,result,owner,checked_date,comments
+V001,DXP1,Badge Access,Fail,Vendor Manager,2026-07-28,Remediation in progress
+V002,DXP1,Scanner/Device Testing,Fail,HR Lead,2026-08-11,Remediation in progress
+V003,DXP1,WiFi/Network Validation,Pending,IT Lead,2026-08-03,Remediation in progress
+V004,DXP1,Dock Readiness,Pass,Safety Lead,2026-08-03,
+V005,DXP1,Route Staging,Pending,HR Lead,2026-08-08,Remediation in progress
+V006,DXP1,Associate Onboarding Check,Pass,Ops Manager,2026-08-04,
+V007,DXP1,Training Completion,Pending,Training Lead,2026-08-09,Remediation in progress
+V008,DXP1,Safety Audit,Pass,Training Lead,2026-08-05,
+V009,DXP1,Parking/Staging Area,Pass,HR Lead,2026-08-09,
+V010,DXP1,Incident Escalation Process,Pass,HR Lead,2026-08-04,
+V011,DXP1,Leadership Signoff,Pass,Ops Manager,2026-08-08,
+V012,DXP2,Badge Access,Fail,IT Lead,2026-08-12,Remediation in progress
+V013,DXP2,Scanner/Device Testing,Pass,Vendor Manager,2026-08-14,
+V014,DXP2,WiFi/Network Validation,Pending,Facilities Lead,2026-08-22,Remediation in progress
+V015,DXP2,Dock Readiness,Pass,Safety Lead,2026-08-17,
+V016,DXP2,Route Staging,Pass,HR Lead,2026-08-15,
+V017,DXP2,Associate Onboarding Check,Pass,IT Lead,2026-08-29,
+V018,DXP2,Training Completion,Pass,Safety Lead,2026-08-29,
+V019,DXP2,Safety Audit,Pending,HR Lead,2026-08-22,Remediation in progress
+V020,DXP2,Parking/Staging Area,Pass,HR Lead,2026-08-27,
+V021,DXP2,Incident Escalation Process,Pass,HR Lead,2026-08-16,
+V022,DXP2,Leadership Signoff,Pass,Ops Manager,2026-08-17,
+V023,DXP3,Badge Access,Pass,Facilities Lead,2026-08-30,
+V024,DXP3,Scanner/Device Testing,Pass,Facilities Lead,2026-09-06,
+V025,DXP3,WiFi/Network Validation,Pass,Safety Lead,2026-08-27,
+V026,DXP3,Dock Readiness,Pass,IT Lead,2026-09-06,
+V027,DXP3,Route Staging,Pass,IT Lead,2026-09-07,
+V028,DXP3,Associate Onboarding Check,Pass,Vendor Manager,2026-09-03,
+V029,DXP3,Training Completion,Pass,Vendor Manager,2026-09-12,
+V030,DXP3,Safety Audit,Pass,Vendor Manager,2026-09-01,
+V031,DXP3,Parking/Staging Area,Pending,Site Leader,2026-08-26,Remediation in progress
+V032,DXP3,Incident Escalation Process,Pass,Site Leader,2026-09-02,
+V033,DXP3,Leadership Signoff,Pass,Vendor Manager,2026-08-31,
+V034,DXP4,Badge Access,Pass,Site Leader,2026-08-04,
+V035,DXP4,Scanner/Device Testing,Pass,IT Lead,2026-08-08,
+V036,DXP4,WiFi/Network Validation,Fail,HR Lead,2026-08-09,Remediation in progress
+V037,DXP4,Dock Readiness,Fail,Safety Lead,2026-08-18,Remediation in progress
+V038,DXP4,Route Staging,Pass,Ops Manager,2026-08-18,
+V039,DXP4,Associate Onboarding Check,Pending,Ops Manager,2026-08-05,Remediation in progress
+V040,DXP4,Training Completion,Pass,Facilities Lead,2026-08-05,
+V041,DXP4,Safety Audit,Fail,Vendor Manager,2026-08-11,Remediation in progress
+V042,DXP4,Parking/Staging Area,Pending,HR Lead,2026-08-21,Remediation in progress
+V043,DXP4,Incident Escalation Process,Pass,HR Lead,2026-08-20,
+V044,DXP4,Leadership Signoff,Fail,Facilities Lead,2026-08-04,Remediation in progress
+V045,DXP5,Badge Access,Pass,HR Lead,2026-09-25,
+V046,DXP5,Scanner/Device Testing,Pass,Vendor Manager,2026-09-12,
+V047,DXP5,WiFi/Network Validation,Pass,HR Lead,2026-09-12,
+V048,DXP5,Dock Readiness,Pass,Training Lead,2026-09-13,
+V049,DXP5,Route Staging,Fail,Ops Manager,2026-09-18,Remediation in progress
+V050,DXP5,Associate Onboarding Check,Pass,HR Lead,2026-09-18,
+V051,DXP5,Training Completion,Fail,Safety Lead,2026-09-12,Remediation in progress
+V052,DXP5,Safety Audit,Pass,Safety Lead,2026-09-14,
+V053,DXP5,Parking/Staging Area,Pending,Safety Lead,2026-09-16,Remediation in progress
+V054,DXP5,Incident Escalation Process,Fail,Facilities Lead,2026-09-18,Remediation in progress
+V055,DXP5,Leadership Signoff,Pass,Ops Manager,2026-09-21,

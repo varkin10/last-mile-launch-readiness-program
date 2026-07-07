@@ -1,0 +1,19 @@
+raid_id,site_id,type,description,category,severity,probability,owner,mitigation,due_date,status
+R001,DXP1,Risk,WiFi coverage gaps in mezzanine area,Technology,Medium,Low,Ops Manager,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-07-17,Escalated
+R002,DXP1,Dependency,WMS go-live depends on network install completion,Technology,High,High,Safety Lead,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-07-27,Open
+R003,DXP1,Issue,Safety audit found missing PPE inventory,Safety,Medium,Low,Safety Lead,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-07-28,Mitigating
+R004,DXP1,Risk,Scanner devices delayed from vendor shipment,Technology,High,Medium,Vendor Manager,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-08-04,Mitigating
+R005,DXP1,Risk,Peak season volume may exceed site design capacity,Operational,High,Medium,Training Lead,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-07-23,Open
+R006,DXP2,Assumption,Regional labor market will support hiring plan,People,Medium,Medium,Ops Manager,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-08-23,Escalated
+R007,DXP2,Dependency,WMS go-live depends on network install completion,Technology,High,High,HR Lead,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-07-26,Mitigating
+R008,DXP2,Issue,Safety audit found missing PPE inventory,Safety,Medium,Low,IT Lead,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-08-05,Open
+R009,DXP3,Issue,Background check turnaround exceeding SLA,People,Medium,Medium,Training Lead,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-08-06,Mitigating
+R010,DXP3,Issue,Fire inspection failed on first attempt,Facilities,High,High,Site Leader,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-08-05,Mitigating
+R011,DXP3,Risk,Dock leveler installation behind schedule,Facilities,Medium,Medium,Ops Manager,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-09-01,Mitigating
+R012,DXP4,Risk,Transportation route conflicts with neighboring site,Operational,Low,Medium,IT Lead,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-08-02,Mitigating
+R013,DXP4,Risk,Hiring pipeline below target for launch date,People,High,High,HR Lead,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-07-29,Open
+R014,DXP4,Dependency,Route staging test depends on dock readiness,Operational,Medium,Medium,Facilities Lead,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-07-18,Closed
+R015,DXP5,Risk,Transportation route conflicts with neighboring site,Operational,Low,Medium,Vendor Manager,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-09-06,Open
+R016,DXP5,Issue,Safety audit found missing PPE inventory,Safety,Medium,Low,Site Leader,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-09-02,Open
+R017,DXP5,Risk,Scanner devices delayed from vendor shipment,Technology,High,Medium,Facilities Lead,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-09-13,Closed
+R018,DXP5,Risk,Hiring pipeline below target for launch date,People,High,High,Vendor Manager,Escalate to vendor / accelerate parallel workstream / add contingency buffer,2026-08-19,Open

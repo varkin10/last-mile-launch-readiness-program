@@ -1,0 +1,46 @@
+site_id,phase,planned_duration_days,actual_duration_days,schedule_variance_days
+DXP1,Site Planning,13,15,2
+DXP1,Facilities Readiness,16,17,1
+DXP1,Technology Readiness,12,9,-3
+DXP1,Hiring Readiness,10,9,-1
+DXP1,Training Readiness,11,12,1
+DXP1,Safety Validation,12,9,-3
+DXP1,Operational Testing,10,11,1
+DXP1,Day 1 Launch,13,12,-1
+DXP1,Post-Launch Stabilization,15,18,3
+DXP2,Site Planning,14,12,-2
+DXP2,Facilities Readiness,15,17,2
+DXP2,Technology Readiness,13,13,0
+DXP2,Hiring Readiness,13,11,-2
+DXP2,Training Readiness,11,13,2
+DXP2,Safety Validation,15,12,-3
+DXP2,Operational Testing,16,19,3
+DXP2,Day 1 Launch,16,13,-3
+DXP2,Post-Launch Stabilization,16,16,0
+DXP3,Site Planning,14,17,3
+DXP3,Facilities Readiness,14,12,-2
+DXP3,Technology Readiness,13,11,-2
+DXP3,Hiring Readiness,12,12,0
+DXP3,Training Readiness,13,10,-3
+DXP3,Safety Validation,13,12,-1
+DXP3,Operational Testing,15,17,2
+DXP3,Day 1 Launch,16,16,0
+DXP3,Post-Launch Stabilization,15,13,-2
+DXP4,Site Planning,14,17,3
+DXP4,Facilities Readiness,10,9,-1
+DXP4,Technology Readiness,14,14,0
+DXP4,Hiring Readiness,15,14,-1
+DXP4,Training Readiness,10,11,1
+DXP4,Safety Validation,15,14,-1
+DXP4,Operational Testing,10,13,3
+DXP4,Day 1 Launch,13,16,3
+DXP4,Post-Launch Stabilization,13,10,-3
+DXP5,Site Planning,14,17,3
+DXP5,Facilities Readiness,15,13,-2
+DXP5,Technology Readiness,11,9,-2
+DXP5,Hiring Readiness,15,15,0
+DXP5,Training Readiness,12,14,2
+DXP5,Safety Validation,14,17,3
+DXP5,Operational Testing,14,15,1
+DXP5,Day 1 Launch,12,9,-3
+DXP5,Post-Launch Stabilization,16,14,-2

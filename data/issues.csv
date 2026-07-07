@@ -1,0 +1,15 @@
+issue_id,site_id,issue,department,resolution_status,days_to_resolve
+I001,DXP1,Permit delay,Vendor Readiness,Resolved,7
+I002,DXP1,Network outage during testing,Technology,Resolved,1
+I003,DXP1,Vendor no-show,Security,Resolved,9
+I004,DXP2,Staffing shortfall,Vendor Readiness,Escalated,1
+I005,DXP2,Network outage during testing,Technology,Resolved,8
+I006,DXP3,Staffing shortfall,Vendor Readiness,Resolved,7
+I007,DXP3,Network outage during testing,Operations,Resolved,11
+I008,DXP3,Permit delay,Training,Escalated,3
+I009,DXP4,Training bottleneck,Transportation,In Progress,7
+I010,DXP4,Staffing shortfall,Vendor Readiness,Resolved,10
+I011,DXP4,Network outage during testing,Transportation,Escalated,7
+I012,DXP5,Staffing shortfall,Safety,In Progress,5
+I013,DXP5,Late equipment delivery,Vendor Readiness,In Progress,5
+I014,DXP5,Late equipment delivery,Operations,Resolved,12

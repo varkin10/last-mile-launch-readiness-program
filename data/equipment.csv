@@ -1,0 +1,26 @@
+equipment_id,site_id,equipment_type,quantity_planned,quantity_installed,status
+E001,DXP1,Handheld Scanners,19,32,Installed
+E002,DXP1,Dock Doors,12,24,In Progress
+E003,DXP1,Conveyor Belts,60,60,Installed
+E004,DXP1,WiFi Access Points,32,18,Installed
+E005,DXP1,Badge Readers,52,11,In Progress
+E006,DXP2,Handheld Scanners,29,37,In Progress
+E007,DXP2,Dock Doors,52,31,In Progress
+E008,DXP2,Conveyor Belts,35,49,In Progress
+E009,DXP2,WiFi Access Points,45,13,Installed
+E010,DXP2,Badge Readers,36,47,Delayed
+E011,DXP3,Handheld Scanners,56,37,Delayed
+E012,DXP3,Dock Doors,45,33,Installed
+E013,DXP3,Conveyor Belts,57,60,Delayed
+E014,DXP3,WiFi Access Points,38,21,Installed
+E015,DXP3,Badge Readers,50,22,Delayed
+E016,DXP4,Handheld Scanners,36,21,Installed
+E017,DXP4,Dock Doors,40,6,Installed
+E018,DXP4,Conveyor Belts,32,19,Installed
+E019,DXP4,WiFi Access Points,59,46,Installed
+E020,DXP4,Badge Readers,58,6,Installed
+E021,DXP5,Handheld Scanners,39,41,Delayed
+E022,DXP5,Dock Doors,31,6,Delayed
+E023,DXP5,Conveyor Belts,30,16,Delayed
+E024,DXP5,WiFi Access Points,23,27,In Progress
+E025,DXP5,Badge Readers,31,22,In Progress

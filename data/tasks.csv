@@ -1,0 +1,181 @@
+task_id,site_id,phase,task_name,owner_dept,due_date,status,priority
+T0001,DXP1,Site Planning,Finalize site layout,Operations,2026-04-26,Delayed,High
+T0002,DXP1,Site Planning,Confirm lease/permits,Operations,2026-05-01,At Risk,Low
+T0003,DXP1,Site Planning,Approve headcount plan,Operations,2026-04-29,On Track,High
+T0004,DXP1,Site Planning,Publish launch schedule,Operations,2026-04-30,Complete,High
+T0005,DXP1,Facilities Readiness,Complete build-out,Facilities,2026-05-08,Complete,High
+T0006,DXP1,Facilities Readiness,Install racking/conveyor,Facilities,2026-05-08,At Risk,Low
+T0007,DXP1,Facilities Readiness,Fire inspection sign-off,Facilities,2026-05-09,On Track,High
+T0008,DXP1,Facilities Readiness,Dock leveler install,Facilities,2026-05-09,At Risk,Medium
+T0009,DXP1,Technology Readiness,Network/WiFi install,Technology,2026-05-25,Blocked,High
+T0010,DXP1,Technology Readiness,Scanner provisioning,Technology,2026-05-25,At Risk,High
+T0011,DXP1,Technology Readiness,WMS go-live config,Technology,2026-05-24,Complete,Low
+T0012,DXP1,Technology Readiness,Badge access system live,Technology,2026-05-21,Complete,High
+T0013,DXP1,Hiring Readiness,Post job requisitions,HR,2026-06-02,Complete,High
+T0014,DXP1,Hiring Readiness,Complete hiring events,HR,2026-06-01,On Track,Low
+T0015,DXP1,Hiring Readiness,Background checks cleared,HR,2026-06-01,Complete,Low
+T0016,DXP1,Hiring Readiness,Offer acceptance target met,HR,2026-06-03,Complete,High
+T0017,DXP1,Training Readiness,Trainer certification,Training,2026-06-15,Complete,Low
+T0018,DXP1,Training Readiness,New hire orientation scheduled,Training,2026-06-16,Complete,High
+T0019,DXP1,Training Readiness,SOP training completed,Training,2026-06-17,Complete,Low
+T0020,DXP1,Training Readiness,Safety training completed,Training,2026-06-15,On Track,Medium
+T0021,DXP1,Safety Validation,Safety audit passed,Safety,2026-06-28,Complete,High
+T0022,DXP1,Safety Validation,PPE stock confirmed,Safety,2026-06-29,On Track,Medium
+T0023,DXP1,Safety Validation,Emergency evacuation plan posted,Safety,2026-06-30,On Track,High
+T0024,DXP1,Safety Validation,Incident escalation tested,Safety,2026-06-27,Complete,High
+T0025,DXP1,Operational Testing,Scanner load test,Operations,2026-07-10,Complete,Medium
+T0026,DXP1,Operational Testing,Route staging dry run,Operations,2026-07-08,Complete,Medium
+T0027,DXP1,Operational Testing,Dock throughput test,Operations,2026-07-12,Delayed,Low
+T0028,DXP1,Operational Testing,Peak volume simulation,Operations,2026-07-09,Blocked,Low
+T0029,DXP1,Day 1 Launch,Leadership sign-off obtained,Operations,2026-07-24,Complete,Medium
+T0030,DXP1,Day 1 Launch,Day 1 staffing confirmed,Operations,2026-07-24,Complete,Low
+T0031,DXP1,Day 1 Launch,Go/No-Go review completed,Operations,2026-07-22,On Track,Low
+T0032,DXP1,Day 1 Launch,Launch war room staffed,Operations,2026-07-20,Complete,Medium
+T0033,DXP1,Post-Launch Stabilization,Daily stand-ups (Week 1),Operations,2026-08-01,Not Started,High
+T0034,DXP1,Post-Launch Stabilization,Defect/issue log review,Operations,2026-07-31,Not Started,High
+T0035,DXP1,Post-Launch Stabilization,30-day performance review,Operations,2026-08-05,Not Started,Low
+T0036,DXP1,Post-Launch Stabilization,Lessons learned session,Operations,2026-08-04,Not Started,Medium
+T0037,DXP2,Site Planning,Finalize site layout,Operations,2026-05-16,On Track,High
+T0038,DXP2,Site Planning,Confirm lease/permits,Operations,2026-05-16,Complete,Medium
+T0039,DXP2,Site Planning,Approve headcount plan,Operations,2026-05-14,Delayed,Medium
+T0040,DXP2,Site Planning,Publish launch schedule,Operations,2026-05-11,Complete,Medium
+T0041,DXP2,Facilities Readiness,Complete build-out,Facilities,2026-05-27,Complete,Medium
+T0042,DXP2,Facilities Readiness,Install racking/conveyor,Facilities,2026-05-26,On Track,High
+T0043,DXP2,Facilities Readiness,Fire inspection sign-off,Facilities,2026-05-23,On Track,Medium
+T0044,DXP2,Facilities Readiness,Dock leveler install,Facilities,2026-05-23,Complete,Low
+T0045,DXP2,Technology Readiness,Network/WiFi install,Technology,2026-06-04,At Risk,High
+T0046,DXP2,Technology Readiness,Scanner provisioning,Technology,2026-06-05,Delayed,Low
+T0047,DXP2,Technology Readiness,WMS go-live config,Technology,2026-06-08,Delayed,Low
+T0048,DXP2,Technology Readiness,Badge access system live,Technology,2026-06-04,On Track,High
+T0049,DXP2,Hiring Readiness,Post job requisitions,HR,2026-06-20,Complete,Medium
+T0050,DXP2,Hiring Readiness,Complete hiring events,HR,2026-06-18,Complete,Medium
+T0051,DXP2,Hiring Readiness,Background checks cleared,HR,2026-06-16,Complete,Low
+T0052,DXP2,Hiring Readiness,Offer acceptance target met,HR,2026-06-17,Complete,High
+T0053,DXP2,Training Readiness,Trainer certification,Training,2026-06-28,Complete,Medium
+T0054,DXP2,Training Readiness,New hire orientation scheduled,Training,2026-07-03,At Risk,High
+T0055,DXP2,Training Readiness,SOP training completed,Training,2026-07-03,Complete,Medium
+T0056,DXP2,Training Readiness,Safety training completed,Training,2026-06-30,Complete,Medium
+T0057,DXP2,Safety Validation,Safety audit passed,Safety,2026-07-15,Complete,High
+T0058,DXP2,Safety Validation,PPE stock confirmed,Safety,2026-07-11,At Risk,Low
+T0059,DXP2,Safety Validation,Emergency evacuation plan posted,Safety,2026-07-13,Complete,High
+T0060,DXP2,Safety Validation,Incident escalation tested,Safety,2026-07-10,Blocked,Medium
+T0061,DXP2,Operational Testing,Scanner load test,Operations,2026-07-24,Complete,Low
+T0062,DXP2,Operational Testing,Route staging dry run,Operations,2026-07-24,Complete,High
+T0063,DXP2,Operational Testing,Dock throughput test,Operations,2026-07-25,At Risk,High
+T0064,DXP2,Operational Testing,Peak volume simulation,Operations,2026-07-26,At Risk,Low
+T0065,DXP2,Day 1 Launch,Leadership sign-off obtained,Operations,2026-08-04,Not Started,Low
+T0066,DXP2,Day 1 Launch,Day 1 staffing confirmed,Operations,2026-08-06,Not Started,Low
+T0067,DXP2,Day 1 Launch,Go/No-Go review completed,Operations,2026-08-04,Not Started,Medium
+T0068,DXP2,Day 1 Launch,Launch war room staffed,Operations,2026-08-04,Not Started,Medium
+T0069,DXP2,Post-Launch Stabilization,Daily stand-ups (Week 1),Operations,2026-08-18,Not Started,High
+T0070,DXP2,Post-Launch Stabilization,Defect/issue log review,Operations,2026-08-19,Not Started,Low
+T0071,DXP2,Post-Launch Stabilization,30-day performance review,Operations,2026-08-17,Not Started,High
+T0072,DXP2,Post-Launch Stabilization,Lessons learned session,Operations,2026-08-20,Not Started,High
+T0073,DXP3,Site Planning,Finalize site layout,Operations,2026-05-28,At Risk,Low
+T0074,DXP3,Site Planning,Confirm lease/permits,Operations,2026-05-28,Complete,Low
+T0075,DXP3,Site Planning,Approve headcount plan,Operations,2026-05-26,Complete,Low
+T0076,DXP3,Site Planning,Publish launch schedule,Operations,2026-05-29,Complete,Medium
+T0077,DXP3,Facilities Readiness,Complete build-out,Facilities,2026-06-07,On Track,Low
+T0078,DXP3,Facilities Readiness,Install racking/conveyor,Facilities,2026-06-07,Complete,Low
+T0079,DXP3,Facilities Readiness,Fire inspection sign-off,Facilities,2026-06-08,Complete,Low
+T0080,DXP3,Facilities Readiness,Dock leveler install,Facilities,2026-06-10,Complete,Low
+T0081,DXP3,Technology Readiness,Network/WiFi install,Technology,2026-06-17,At Risk,High
+T0082,DXP3,Technology Readiness,Scanner provisioning,Technology,2026-06-17,On Track,Low
+T0083,DXP3,Technology Readiness,WMS go-live config,Technology,2026-06-20,Delayed,Low
+T0084,DXP3,Technology Readiness,Badge access system live,Technology,2026-06-20,On Track,High
+T0085,DXP3,Hiring Readiness,Post job requisitions,HR,2026-07-02,At Risk,Medium
+T0086,DXP3,Hiring Readiness,Complete hiring events,HR,2026-07-03,At Risk,Medium
+T0087,DXP3,Hiring Readiness,Background checks cleared,HR,2026-07-04,On Track,Low
+T0088,DXP3,Hiring Readiness,Offer acceptance target met,HR,2026-06-29,At Risk,Medium
+T0089,DXP3,Training Readiness,Trainer certification,Training,2026-07-12,On Track,High
+T0090,DXP3,Training Readiness,New hire orientation scheduled,Training,2026-07-12,Complete,High
+T0091,DXP3,Training Readiness,SOP training completed,Training,2026-07-11,Complete,Medium
+T0092,DXP3,Training Readiness,Safety training completed,Training,2026-07-11,Complete,Low
+T0093,DXP3,Safety Validation,Safety audit passed,Safety,2026-07-24,On Track,High
+T0094,DXP3,Safety Validation,PPE stock confirmed,Safety,2026-07-27,Complete,Medium
+T0095,DXP3,Safety Validation,Emergency evacuation plan posted,Safety,2026-07-27,On Track,Low
+T0096,DXP3,Safety Validation,Incident escalation tested,Safety,2026-07-24,Delayed,High
+T0097,DXP3,Operational Testing,Scanner load test,Operations,2026-08-05,Not Started,Medium
+T0098,DXP3,Operational Testing,Route staging dry run,Operations,2026-08-06,Not Started,High
+T0099,DXP3,Operational Testing,Dock throughput test,Operations,2026-08-09,Not Started,Medium
+T0100,DXP3,Operational Testing,Peak volume simulation,Operations,2026-08-07,Not Started,High
+T0101,DXP3,Day 1 Launch,Leadership sign-off obtained,Operations,2026-08-21,Not Started,High
+T0102,DXP3,Day 1 Launch,Day 1 staffing confirmed,Operations,2026-08-17,Not Started,High
+T0103,DXP3,Day 1 Launch,Go/No-Go review completed,Operations,2026-08-21,Not Started,Low
+T0104,DXP3,Day 1 Launch,Launch war room staffed,Operations,2026-08-18,Not Started,High
+T0105,DXP3,Post-Launch Stabilization,Daily stand-ups (Week 1),Operations,2026-08-29,Not Started,High
+T0106,DXP3,Post-Launch Stabilization,Defect/issue log review,Operations,2026-09-01,Not Started,Low
+T0107,DXP3,Post-Launch Stabilization,30-day performance review,Operations,2026-08-30,Not Started,Low
+T0108,DXP3,Post-Launch Stabilization,Lessons learned session,Operations,2026-09-01,Not Started,Medium
+T0109,DXP4,Site Planning,Finalize site layout,Operations,2026-05-04,Complete,Low
+T0110,DXP4,Site Planning,Confirm lease/permits,Operations,2026-05-05,At Risk,High
+T0111,DXP4,Site Planning,Approve headcount plan,Operations,2026-05-04,Complete,Low
+T0112,DXP4,Site Planning,Publish launch schedule,Operations,2026-05-03,Complete,High
+T0113,DXP4,Facilities Readiness,Complete build-out,Facilities,2026-05-15,Complete,Medium
+T0114,DXP4,Facilities Readiness,Install racking/conveyor,Facilities,2026-05-17,Delayed,Low
+T0115,DXP4,Facilities Readiness,Fire inspection sign-off,Facilities,2026-05-15,At Risk,Medium
+T0116,DXP4,Facilities Readiness,Dock leveler install,Facilities,2026-05-17,On Track,Low
+T0117,DXP4,Technology Readiness,Network/WiFi install,Technology,2026-05-29,At Risk,High
+T0118,DXP4,Technology Readiness,Scanner provisioning,Technology,2026-05-31,Complete,High
+T0119,DXP4,Technology Readiness,WMS go-live config,Technology,2026-06-01,Delayed,Medium
+T0120,DXP4,Technology Readiness,Badge access system live,Technology,2026-06-01,On Track,Low
+T0121,DXP4,Hiring Readiness,Post job requisitions,HR,2026-06-09,Delayed,High
+T0122,DXP4,Hiring Readiness,Complete hiring events,HR,2026-06-09,Complete,High
+T0123,DXP4,Hiring Readiness,Background checks cleared,HR,2026-06-13,Complete,High
+T0124,DXP4,Hiring Readiness,Offer acceptance target met,HR,2026-06-08,Complete,Low
+T0125,DXP4,Training Readiness,Trainer certification,Training,2026-06-25,At Risk,High
+T0126,DXP4,Training Readiness,New hire orientation scheduled,Training,2026-06-25,At Risk,High
+T0127,DXP4,Training Readiness,SOP training completed,Training,2026-06-23,Complete,High
+T0128,DXP4,Training Readiness,Safety training completed,Training,2026-06-21,On Track,High
+T0129,DXP4,Safety Validation,Safety audit passed,Safety,2026-07-05,Complete,Low
+T0130,DXP4,Safety Validation,PPE stock confirmed,Safety,2026-07-04,Complete,High
+T0131,DXP4,Safety Validation,Emergency evacuation plan posted,Safety,2026-07-03,Complete,High
+T0132,DXP4,Safety Validation,Incident escalation tested,Safety,2026-07-02,Delayed,Low
+T0133,DXP4,Operational Testing,Scanner load test,Operations,2026-07-15,On Track,Medium
+T0134,DXP4,Operational Testing,Route staging dry run,Operations,2026-07-18,At Risk,Medium
+T0135,DXP4,Operational Testing,Dock throughput test,Operations,2026-07-16,Complete,High
+T0136,DXP4,Operational Testing,Peak volume simulation,Operations,2026-07-19,Blocked,High
+T0137,DXP4,Day 1 Launch,Leadership sign-off obtained,Operations,2026-07-26,Complete,Medium
+T0138,DXP4,Day 1 Launch,Day 1 staffing confirmed,Operations,2026-07-29,On Track,Medium
+T0139,DXP4,Day 1 Launch,Go/No-Go review completed,Operations,2026-07-28,Complete,Medium
+T0140,DXP4,Day 1 Launch,Launch war room staffed,Operations,2026-07-26,Complete,High
+T0141,DXP4,Post-Launch Stabilization,Daily stand-ups (Week 1),Operations,2026-08-07,Not Started,Low
+T0142,DXP4,Post-Launch Stabilization,Defect/issue log review,Operations,2026-08-07,Not Started,High
+T0143,DXP4,Post-Launch Stabilization,30-day performance review,Operations,2026-08-12,Not Started,Medium
+T0144,DXP4,Post-Launch Stabilization,Lessons learned session,Operations,2026-08-07,Not Started,Medium
+T0145,DXP5,Site Planning,Finalize site layout,Operations,2026-06-12,On Track,High
+T0146,DXP5,Site Planning,Confirm lease/permits,Operations,2026-06-11,On Track,High
+T0147,DXP5,Site Planning,Approve headcount plan,Operations,2026-06-08,Complete,Medium
+T0148,DXP5,Site Planning,Publish launch schedule,Operations,2026-06-11,Complete,Medium
+T0149,DXP5,Facilities Readiness,Complete build-out,Facilities,2026-06-23,Complete,Medium
+T0150,DXP5,Facilities Readiness,Install racking/conveyor,Facilities,2026-06-21,Complete,High
+T0151,DXP5,Facilities Readiness,Fire inspection sign-off,Facilities,2026-06-24,On Track,Medium
+T0152,DXP5,Facilities Readiness,Dock leveler install,Facilities,2026-06-20,Blocked,High
+T0153,DXP5,Technology Readiness,Network/WiFi install,Technology,2026-07-06,On Track,Low
+T0154,DXP5,Technology Readiness,Scanner provisioning,Technology,2026-07-02,At Risk,High
+T0155,DXP5,Technology Readiness,WMS go-live config,Technology,2026-07-06,Complete,High
+T0156,DXP5,Technology Readiness,Badge access system live,Technology,2026-07-05,At Risk,Medium
+T0157,DXP5,Hiring Readiness,Post job requisitions,HR,2026-07-15,On Track,Medium
+T0158,DXP5,Hiring Readiness,Complete hiring events,HR,2026-07-17,On Track,Medium
+T0159,DXP5,Hiring Readiness,Background checks cleared,HR,2026-07-18,On Track,High
+T0160,DXP5,Hiring Readiness,Offer acceptance target met,HR,2026-07-15,Complete,High
+T0161,DXP5,Training Readiness,Trainer certification,Training,2026-07-27,Complete,Medium
+T0162,DXP5,Training Readiness,New hire orientation scheduled,Training,2026-07-27,Complete,Medium
+T0163,DXP5,Training Readiness,SOP training completed,Training,2026-07-27,Complete,Low
+T0164,DXP5,Training Readiness,Safety training completed,Training,2026-07-25,On Track,Low
+T0165,DXP5,Safety Validation,Safety audit passed,Safety,2026-08-06,Not Started,Low
+T0166,DXP5,Safety Validation,PPE stock confirmed,Safety,2026-08-08,Not Started,High
+T0167,DXP5,Safety Validation,Emergency evacuation plan posted,Safety,2026-08-10,Not Started,Medium
+T0168,DXP5,Safety Validation,Incident escalation tested,Safety,2026-08-10,Not Started,High
+T0169,DXP5,Operational Testing,Scanner load test,Operations,2026-08-19,Not Started,Low
+T0170,DXP5,Operational Testing,Route staging dry run,Operations,2026-08-19,Not Started,High
+T0171,DXP5,Operational Testing,Dock throughput test,Operations,2026-08-18,Not Started,Medium
+T0172,DXP5,Operational Testing,Peak volume simulation,Operations,2026-08-23,Not Started,High
+T0173,DXP5,Day 1 Launch,Leadership sign-off obtained,Operations,2026-08-31,Not Started,Medium
+T0174,DXP5,Day 1 Launch,Day 1 staffing confirmed,Operations,2026-08-31,Not Started,Low
+T0175,DXP5,Day 1 Launch,Go/No-Go review completed,Operations,2026-09-03,Not Started,High
+T0176,DXP5,Day 1 Launch,Launch war room staffed,Operations,2026-08-31,Not Started,High
+T0177,DXP5,Post-Launch Stabilization,Daily stand-ups (Week 1),Operations,2026-09-15,Not Started,High
+T0178,DXP5,Post-Launch Stabilization,Defect/issue log review,Operations,2026-09-12,Not Started,High
+T0179,DXP5,Post-Launch Stabilization,30-day performance review,Operations,2026-09-11,Not Started,High
+T0180,DXP5,Post-Launch Stabilization,Lessons learned session,Operations,2026-09-13,Not Started,High

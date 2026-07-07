@@ -1,0 +1,6 @@
+site_id,site_name,region,launch_date,readiness_score,risk_score,schedule_variance_days,launch_confidence_score,go_no_go,open_blockers,critical_risks,delayed_milestones
+DXP1,Columbus East,Midwest,2026-08-17,56.7,88.9,0,43.4,NO-GO,2,2,0
+DXP2,Charlotte South,Southeast,2026-09-01,62.9,0.0,-3,62.9,CONDITIONAL GO,1,0,1
+DXP3,Phoenix West,Southwest,2026-09-14,61.1,66.7,-5,51.1,NO-GO,0,0,0
+DXP4,Newark Metro,Northeast,2026-08-24,58.8,66.7,4,46.4,NO-GO,1,1,0
+DXP5,Denver North,Mountain West,2026-09-28,43.0,66.7,0,33.0,NO-GO,1,1,1

@@ -1,0 +1,6 @@
+site_id,budget_category,planned_cost_usd,actual_cost_usd,variance_usd,variance_pct
+DXP1,Total Launch Budget,1936406,2055860,119454,6.2
+DXP2,Total Launch Budget,2069145,2363843,294698,14.2
+DXP3,Total Launch Budget,2328730,2553872,225142,9.7
+DXP4,Total Launch Budget,1453870,1617801,163931,11.3
+DXP5,Total Launch Budget,1861752,1655941,-205811,-11.1

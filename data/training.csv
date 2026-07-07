@@ -1,0 +1,6 @@
+site_id,planned_associates,trained_associates,trainer_certifications_complete,training_completion_pct
+DXP1,194,139,False,96.2
+DXP2,248,170,True,77.3
+DXP3,197,238,False,81.2
+DXP4,186,186,True,73.1
+DXP5,255,188,True,94.1

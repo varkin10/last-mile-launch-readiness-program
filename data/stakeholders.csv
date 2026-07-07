@@ -1,0 +1,14 @@
+stakeholder_id,name,department,role,raci_default
+S01,Launch Manager,Program,Launch Manager,A
+S02,Site Leader,Operations,Site Leader,R
+S03,Ops Manager,Operations,Operations Manager,R
+S04,HR Business Partner,HR,HR Lead,R
+S05,Training Lead,Training,Training Lead,R
+S06,IT Site Engineer,Technology,IT Lead,R
+S07,Facilities Manager,Facilities,Facilities Lead,R
+S08,Safety Manager,Safety,Safety Lead,R
+S09,Security Lead,Security,Security Lead,C
+S10,Transportation Manager,Transportation,Transportation Lead,R
+S11,Finance Partner,Finance,Finance Business Partner,C
+S12,Vendor Manager,Vendor Management,Procurement/Vendor Lead,R
+S13,Regional Ops Director,Leadership,Regional Director,I

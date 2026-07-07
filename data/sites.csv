@@ -1,0 +1,6 @@
+site_id,site_name,region,launch_date,site_type
+DXP1,Columbus East,Midwest,2026-08-17,Same-Day
+DXP2,Charlotte South,Southeast,2026-09-01,Standard
+DXP3,Phoenix West,Southwest,2026-09-14,Standard
+DXP4,Newark Metro,Northeast,2026-08-24,Same-Day
+DXP5,Denver North,Mountain West,2026-09-28,Standard

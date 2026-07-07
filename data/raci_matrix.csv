@@ -1,0 +1,13 @@
+Activity,Launch Manager,Site Leader,Operations Manager,HR Lead,Training Lead,IT Lead,Facilities Lead,Safety Lead,Security Lead,Transportation Lead,Finance Partner,Vendor Manager
+Site Selection & Lease Approval,A,C,C,,,,R,,,,C,
+Facilities Build-Out,A,I,,,,,R,C,,,,R
+Network & Technology Install,A,I,,,,R,,,,,,C
+Hiring Plan & Recruiting,A,C,C,R,,,,,,,,
+New Hire Training,I,A,,C,R,,,,,,,
+Safety Audit & Certification,I,A,,,,,C,R,,,,
+Operational Readiness Testing,A,R,R,,,C,,,,,,
+Go/No-Go Decision,A,R,C,,,,,C,C,,,
+Day 1 Launch Execution,A,R,R,,,,,,,R,,
+Post-Launch Stabilization,A,R,R,,C,,,,,,,
+Budget & Financial Tracking,A,I,,,,,,,,,R,
+Vendor Delivery Management,C,,,,,C,C,,,,,R

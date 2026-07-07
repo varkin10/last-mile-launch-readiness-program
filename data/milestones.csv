@@ -1,0 +1,46 @@
+milestone_id,site_id,phase,planned_date,owner_dept,status,sequence
+M001,DXP1,Site Planning,2026-05-01,Operations,Complete,1
+M002,DXP1,Facilities Readiness,2026-05-13,Facilities,Complete,2
+M003,DXP1,Technology Readiness,2026-05-25,Technology,Complete,3
+M004,DXP1,Hiring Readiness,2026-06-06,HR,Complete,4
+M005,DXP1,Training Readiness,2026-06-18,Training,On Track,5
+M006,DXP1,Safety Validation,2026-06-30,Safety,At Risk,6
+M007,DXP1,Operational Testing,2026-07-12,Operations,On Track,7
+M008,DXP1,Day 1 Launch,2026-07-24,Operations,On Track,8
+M009,DXP1,Post-Launch Stabilization,2026-08-05,Operations,Not Started,9
+M010,DXP2,Site Planning,2026-05-16,Operations,Complete,1
+M011,DXP2,Facilities Readiness,2026-05-28,Facilities,On Track,2
+M012,DXP2,Technology Readiness,2026-06-09,Technology,Blocked,3
+M013,DXP2,Hiring Readiness,2026-06-21,HR,Delayed,4
+M014,DXP2,Training Readiness,2026-07-03,Training,Complete,5
+M015,DXP2,Safety Validation,2026-07-15,Safety,On Track,6
+M016,DXP2,Operational Testing,2026-07-27,Operations,At Risk,7
+M017,DXP2,Day 1 Launch,2026-08-08,Operations,On Track,8
+M018,DXP2,Post-Launch Stabilization,2026-08-20,Operations,Not Started,9
+M019,DXP3,Site Planning,2026-05-29,Operations,At Risk,1
+M020,DXP3,Facilities Readiness,2026-06-10,Facilities,At Risk,2
+M021,DXP3,Technology Readiness,2026-06-22,Technology,Complete,3
+M022,DXP3,Hiring Readiness,2026-07-04,HR,Complete,4
+M023,DXP3,Training Readiness,2026-07-16,Training,On Track,5
+M024,DXP3,Safety Validation,2026-07-28,Safety,Complete,6
+M025,DXP3,Operational Testing,2026-08-09,Operations,Not Started,7
+M026,DXP3,Day 1 Launch,2026-08-21,Operations,At Risk,8
+M027,DXP3,Post-Launch Stabilization,2026-09-02,Operations,Not Started,9
+M028,DXP4,Site Planning,2026-05-08,Operations,Complete,1
+M029,DXP4,Facilities Readiness,2026-05-20,Facilities,Complete,2
+M030,DXP4,Technology Readiness,2026-06-01,Technology,At Risk,3
+M031,DXP4,Hiring Readiness,2026-06-13,HR,At Risk,4
+M032,DXP4,Training Readiness,2026-06-25,Training,Complete,5
+M033,DXP4,Safety Validation,2026-07-07,Safety,Complete,6
+M034,DXP4,Operational Testing,2026-07-19,Operations,Complete,7
+M035,DXP4,Day 1 Launch,2026-07-31,Operations,On Track,8
+M036,DXP4,Post-Launch Stabilization,2026-08-12,Operations,Not Started,9
+M037,DXP5,Site Planning,2026-06-12,Operations,Complete,1
+M038,DXP5,Facilities Readiness,2026-06-24,Facilities,Delayed,2
+M039,DXP5,Technology Readiness,2026-07-06,Technology,Complete,3
+M040,DXP5,Hiring Readiness,2026-07-18,HR,Complete,4
+M041,DXP5,Training Readiness,2026-07-30,Training,At Risk,5
+M042,DXP5,Safety Validation,2026-08-11,Safety,Not Started,6
+M043,DXP5,Operational Testing,2026-08-23,Operations,Not Started,7
+M044,DXP5,Day 1 Launch,2026-09-04,Operations,Not Started,8
+M045,DXP5,Post-Launch Stabilization,2026-09-16,Operations,Not Started,9
