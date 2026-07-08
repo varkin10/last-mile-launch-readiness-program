@@ -68,7 +68,7 @@ section[data-testid="stSidebar"] .block-container { padding-top: 2.5rem; }
 }
 
 @media (max-width: 768px) {
-    .block-container { padding-left: 1rem; padding-right: 1rem; padding-top: 1rem; }
+    .block-container { padding-left:0.7rem; padding-right:0.7rem; padding-top: 5.5rem !important; }
     .dashboard-header { padding: 1rem; border-radius: 8px; margin-bottom: 0.75rem; }
     .header-title { font-size: 1.15rem; }
     .header-caption { font-size: 0.75rem; }
