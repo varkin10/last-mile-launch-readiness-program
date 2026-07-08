@@ -137,7 +137,7 @@ GONOGO_COLOR = {"GO": "#2e7d32", "CONDITIONAL GO": "#f9a825", "NO-GO": "#c62828"
 st.sidebar.title("📦 LAST MILE LAUNCH\nREADINESS PROGRAM")
 st.sidebar.caption("5 simulated station launches | Program snapshot: Aug 2026")
 page = st.sidebar.radio("Navigate", [
-    "Executive Overview", "Site Readiness", "RAID Log", "Milestone Tracker",
+    "About This Project", "Executive Overview", "Site Readiness", "RAID Log", "Milestone Tracker",
     "Stakeholder Ownership", "Day 1 Validation", "WBR Summary",
 ])
 st.sidebar.divider()
@@ -148,8 +148,94 @@ render_banner(
     "5 simulated station launches · Program snapshot: August 2026",
 )
 
+# ---------------------------------------------------------------- ABOUT
+if page == "About This Project":
+    st.subheader("Program Overview")
+    st.markdown("""
+The Last Mile Launch Readiness Program is a launch governance model built
+for a Program Manager role focused on multi-site delivery station launches.
+It standardizes how launch readiness is planned, tracked, and reported
+across concurrent site openings.
+""")
+
+    st.subheader("Problem")
+    st.markdown("""
+Opening multiple delivery stations at once requires nine functional teams —
+Operations, HR, Training, IT, Facilities, Safety, Security, Transportation,
+and Vendor Management — to reach readiness on the same fixed date. Without a
+standardized process, risk visibility is inconsistent, readiness criteria
+vary by site, and leadership lacks a comparable view of program health. This
+typically results in schedule slippage and inconsistent Day 1 execution.
+""")
+
+    st.subheader("What This Provides")
+    st.markdown("""
+A complete launch operating model applied to 5 concurrent station launches:
+a program charter, a standardized 9-phase launch playbook with entry/exit
+criteria, a RACI matrix, a RAID log, a readiness and risk scoring model that
+produces an automated Go/No-Go recommendation, a Weekly Business Review
+format, a Day 1 operational validation checklist, and a post-launch
+retrospective process. This dashboard is the reporting layer on top of that
+program; the full artifacts are in the GitHub repository linked below.
+""")
+
+    st.subheader("Why It Was Built This Way")
+    st.markdown("""
+Each component maps to a specific gap in ad hoc, spreadsheet-based launch
+tracking: the playbook standardizes what "ready" means across every site;
+the RACI matrix removes ownership ambiguity; the RAID log surfaces risk
+early instead of at Day 1; the scoring model replaces subjective status
+calls with a consistent, comparable metric; and the WBR format gives
+leadership a decision-focused view instead of a raw status list.
+""")
+
+    st.subheader("Stakeholder Alignment")
+    st.markdown("""
+Governance spans 12 roles: Launch Manager, Site Leader, Operations Manager,
+HR Business Partner, Training Lead, IT Site Engineer, Facilities Manager,
+Safety Manager, Security Lead, Transportation Manager, Finance Business
+Partner, and Vendor Manager, with escalation to a Regional Operations
+Director. Ownership for every activity and RAID item is explicit — see the
+Stakeholder Ownership page for the full RACI matrix.
+""")
+
+    st.subheader("Data")
+    st.markdown("""
+The dataset (tasks, milestones, risks, hiring, equipment, budget) is
+synthetic, generated to reflect realistic structure and scale for a 5-site
+concurrent launch program. It was designed with reference to the structure
+of public logistics datasets, including Amazon's Last Mile Routing Research
+Challenge and the Kaggle Amazon Delivery dataset, though no public dataset
+exists for internal launch-program operations, so the operational data itself
+is simulated. Full field definitions are in the data dictionary in the
+GitHub repository.
+""")
+
+    st.subheader("What Each Page Shows")
+    st.markdown("""
+- **Executive Overview** — program-wide readiness and Go/No-Go status across all 5 sites, with top program risks
+- **Site Readiness** — department-level readiness, open risks, and task detail for a single selected site
+- **RAID Log** — every risk, assumption, issue, and dependency across the program, filterable by type and site
+- **Milestone Tracker** — status of every launch milestone by site and phase, with delayed/blocked items surfaced
+- **Stakeholder Ownership** — task load by department and the full RACI matrix
+- **Day 1 Validation** — the operational checklist (badge access, scanner testing, safety audit, etc.) gating each site's launch
+- **WBR Summary** — the same content that would go into a weekly leadership report: health, top risks, escalations, priorities
+
+**Current result:** 1 of 5 sites is tracking Conditional GO; 4 are tracking
+NO-GO, driven primarily by technology and schedule risk identified in the
+RAID log. This reflects the scoring model surfacing real risk early rather
+than an idealized all-green outcome.
+""")
+
+    st.subheader("Program Artifacts")
+    st.markdown("""
+The charter, playbook, RACI/RAID workbook, WBR template, Day 1 checklist,
+and retrospective template are in the GitHub repository:
+[github.com/varkin10/last-mile-launch-readiness-program](https://github.com/varkin10/last-mile-launch-readiness-program)
+""")
+
 # ---------------------------------------------------------------- EXECUTIVE OVERVIEW
-if page == "Executive Overview":
+elif page == "Executive Overview":
     st.subheader("Executive Launch Dashboard")
     st.caption("Program-level readiness across all 5 concurrent station launches")
 
