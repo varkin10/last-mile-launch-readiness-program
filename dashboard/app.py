@@ -12,13 +12,14 @@ import plotly.graph_objects as go
 from analytics import load_all, build_site_scorecard, department_readiness
 
 st.set_page_config(page_title="Last Mile Launch Readiness Program", layout="wide", page_icon="📦",
-                    initial_sidebar_state="collapsed")
+                    initial_sidebar_state="expanded")
 
 STATUS_COLORS = {"good": "#2e7d32", "warn": "#f9a825", "bad": "#c62828", "neutral": "#1F3864"}
 
 st.markdown("""
 <style>
-.block-container { padding-top: 1.5rem; }
+.block-container { padding-top: 3rem; padding-bottom: 3rem; max-width: 1200px; }
+section[data-testid="stSidebar"] .block-container { padding-top: 2.5rem; }
 
 .dashboard-header {
     background: linear-gradient(135deg, #1F3864 0%, #2E5984 100%);
@@ -36,20 +37,6 @@ st.markdown("""
 .header-caption {
     font-size: 0.85rem;
     opacity: 0.9;
-}
-
-.page-header {
-    margin-bottom: 1rem;
-}
-.page-title {
-    font-size: 1.35rem;
-    font-weight: 700;
-    color: #1F3864;
-    margin-bottom: 0.15rem;
-}
-.page-caption {
-    font-size: 0.85rem;
-    color: #666;
 }
 
 .kpi-row {
@@ -85,8 +72,6 @@ st.markdown("""
     .dashboard-header { padding: 1rem; border-radius: 8px; margin-bottom: 0.75rem; }
     .header-title { font-size: 1.15rem; }
     .header-caption { font-size: 0.75rem; }
-    .page-title { font-size: 1.1rem; }
-    .page-caption { font-size: 0.75rem; }
     h2 { font-size: 1.1rem !important; }
     h3 { font-size: 1rem !important; }
     .kpi-card {
@@ -137,16 +122,6 @@ def render_banner(title, caption=None):
     )
 
 
-def render_page_header(title, caption=None):
-    cap_html = f'<div class="page-caption">{caption}</div>' if caption else ""
-    st.markdown(
-        f'<div class="page-header">'
-        f'<div class="page-title">{title}</div>{cap_html}'
-        f'</div>',
-        unsafe_allow_html=True,
-    )
-
-
 @st.cache_data
 def get_data():
     d = load_all()
@@ -159,17 +134,14 @@ scorecard = d["scorecard"]
 
 GONOGO_COLOR = {"GO": "#2e7d32", "CONDITIONAL GO": "#f9a825", "NO-GO": "#c62828"}
 
-PAGES = [
+st.sidebar.title("📦 LAST MILE LAUNCH\nREADINESS PROGRAM")
+st.sidebar.caption("5 simulated station launches | Program snapshot: Aug 2026")
+page = st.sidebar.radio("Navigate", [
     "Executive Overview", "Site Readiness", "RAID Log", "Milestone Tracker",
     "Stakeholder Ownership", "Day 1 Validation", "WBR Summary",
-]
-
-with st.sidebar:
-    st.caption("Navigation is at the top of the page.")
-    st.divider()
-    st.caption("Data: synthetic operational dataset generated for this case study. See /data and data_dictionary.md.")
-
-page = st.selectbox("Navigate", PAGES, label_visibility="collapsed")
+])
+st.sidebar.divider()
+st.sidebar.caption("Data: synthetic operational dataset generated for this case study. See /data and data_dictionary.md.")
 
 render_banner(
     "📦 Last Mile Launch Readiness Program",
@@ -178,7 +150,8 @@ render_banner(
 
 # ---------------------------------------------------------------- EXECUTIVE OVERVIEW
 if page == "Executive Overview":
-    render_page_header("Executive Launch Dashboard", "Program-level readiness across all 5 concurrent station launches")
+    st.subheader("Executive Launch Dashboard")
+    st.caption("Program-level readiness across all 5 concurrent station launches")
 
     healthy_sites = (scorecard.go_no_go != "NO-GO").sum()
     critical_risks = int(scorecard["critical_risks"].sum())
@@ -221,7 +194,7 @@ if page == "Executive Overview":
 
 # ---------------------------------------------------------------- SITE READINESS
 elif page == "Site Readiness":
-    render_page_header("Site Readiness")
+    st.subheader("Site Readiness")
     site_pick = st.selectbox("Select site", sites["site_name"])
     site_id = sites[sites.site_name == site_pick]["site_id"].values[0]
     row = scorecard[scorecard.site_id == site_id].iloc[0]
@@ -255,7 +228,7 @@ elif page == "Site Readiness":
 
 # ---------------------------------------------------------------- RAID LOG
 elif page == "RAID Log":
-    render_page_header("RAID Log — Risks, Assumptions, Issues, Dependencies")
+    st.subheader("RAID Log — Risks, Assumptions, Issues, Dependencies")
     c1, c2 = st.columns(2)
     type_filter = c1.multiselect("Type", raid.type.unique(), default=list(raid.type.unique()))
     site_filter = c2.multiselect("Site", raid.site_id.unique(), default=list(raid.site_id.unique()))
@@ -277,7 +250,7 @@ elif page == "RAID Log":
 
 # ---------------------------------------------------------------- MILESTONE TRACKER
 elif page == "Milestone Tracker":
-    render_page_header("Milestone Tracker")
+    st.subheader("Milestone Tracker")
     fig = px.timeline(milestones, x_start="planned_date", x_end="planned_date", y="site_id",
                        color="status", title="Milestone Timeline by Site")
     fig2 = px.scatter(milestones, x="planned_date", y="site_id", color="status", symbol="phase",
@@ -293,7 +266,7 @@ elif page == "Milestone Tracker":
 
 # ---------------------------------------------------------------- STAKEHOLDER OWNERSHIP
 elif page == "Stakeholder Ownership":
-    render_page_header("Cross-Functional Stakeholder Ownership")
+    st.subheader("Cross-Functional Stakeholder Ownership")
     workload = tasks.groupby("owner_dept").agg(total_tasks=("task_id", "count"),
                                                  blocked=("status", lambda s: (s == "Blocked").sum()),
                                                  delayed=("status", lambda s: (s == "Delayed").sum())).reset_index()
@@ -309,7 +282,7 @@ elif page == "Stakeholder Ownership":
 
 # ---------------------------------------------------------------- DAY 1 VALIDATION
 elif page == "Day 1 Validation":
-    render_page_header("Day 1 Operational Validation")
+    st.subheader("Day 1 Operational Validation")
     site_pick = st.selectbox("Select site", sites["site_name"], key="val_site")
     site_id = sites[sites.site_name == site_pick]["site_id"].values[0]
     v = validation[validation.site_id == site_id]
@@ -328,10 +301,8 @@ elif page == "Day 1 Validation":
 
 # ---------------------------------------------------------------- WBR SUMMARY
 elif page == "WBR Summary":
-    render_page_header(
-        "Weekly Business Review — Auto-Generated Summary",
-        "This page renders the same content that goes into the Executive WBR document, pulled live from current data.",
-    )
+    st.subheader("Weekly Business Review — Auto-Generated Summary")
+    st.caption("This page renders the same content that goes into the Executive WBR document, pulled live from current data.")
 
     healthy = (scorecard.go_no_go != "NO-GO").sum()
     st.markdown(f"### Program Health: {'🟢 Green' if healthy == len(scorecard) else '🟡 Yellow' if healthy > 0 else '🔴 Red'}")
