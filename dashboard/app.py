@@ -18,69 +18,56 @@ STATUS_COLORS = {"good": "#2e7d32", "warn": "#f9a825", "bad": "#c62828", "neutra
 
 st.markdown("""
 <style>
-.block-container { padding-top: 3rem; padding-bottom: 3rem; max-width: 1200px; }
+:root {
+  --ink:#181d26; --body:#333840; --muted:#41454d; --hairline:#dddddd; --border-strong:#9297a0;
+  --canvas:#ffffff; --surface-soft:#f8fafc; --surface-strong:#e0e2e6;
+  --coral:#aa2d00; --forest:#0a2e0e; --cream:#f5e9d4; --peach:#fcab79; --mint:#a8d8c4; --mustard:#d9a441;
+  --on-primary:#ffffff; --link:#1b61c9;
+}
+html, body, [class*="css"] {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--body);
+}
+.block-container { padding-top: 3rem; padding-bottom: 3rem; max-width: 1200px; background: var(--canvas); }
 section[data-testid="stSidebar"] .block-container { padding-top: 2.5rem; }
+section[data-testid="stSidebar"] { background: var(--canvas); border-right: 1px solid var(--hairline); }
 
-.dashboard-header {
-    background: linear-gradient(135deg, #1F3864 0%, #2E5984 100%);
-    border-radius: 12px;
-    padding: 1.25rem 1.5rem;
-    margin-bottom: 1rem;
-    color: #FFFFFF;
-}
-.header-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 0.25rem;
-}
-.header-caption {
-    font-size: 0.85rem;
-    opacity: 0.9;
-}
+h1, h2, h3 { color: var(--ink) !important; font-weight: 500 !important; letter-spacing: 0; }
+h2 { font-size: 1.5rem !important; } h3 { font-size: 1.15rem !important; }
+p, span, div, label { color: var(--body); }
 
-.kpi-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-bottom: 1.25rem;
-}
-.kpi-card {
-    flex: 1 1 calc(25% - 0.75rem);
-    min-width: 140px;
-    background: #FFFFFF;
-    border-radius: 10px;
-    padding: 1rem 1.25rem;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-    border: 1px solid #E8EAED;
-}
-.kpi-label {
-    font-size: 0.75rem;
-    color: #666;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    margin-bottom: 0.35rem;
-}
-.kpi-value {
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.2;
-}
+.hdr-wrap { background: var(--canvas); border-bottom: 1px solid var(--hairline);
+    padding: 0 0 20px 0; margin-bottom: 24px; }
+.hdr-wrap h1 { color: var(--ink) !important; font-size: 1.6rem !important; margin:0 0 6px 0; font-weight:500 !important; }
+.hdr-wrap p { color: var(--muted); margin:0; font-size:0.85rem; }
+
+.alert-band { background: var(--coral); color: var(--on-primary); border-radius: 12px;
+    padding: 20px 24px; margin-bottom: 20px; }
+.alert-band .alabel { font-size:0.72rem; text-transform:uppercase; letter-spacing:.06em; opacity:0.85; font-weight:500; }
+.alert-band .atext { font-size:1.05rem; font-weight:400; margin-top:4px; }
+
+.kpi-row { display:flex; gap:12px; flex-wrap:wrap; margin-bottom: 22px; }
+.kpi-card { flex:1 1 160px; background: var(--canvas); border:1px solid var(--hairline); border-radius:10px;
+    padding:16px; }
+.kpi-label { font-size:0.72rem; color: var(--muted); text-transform:uppercase; letter-spacing:.06em; font-weight:500; }
+.kpi-value { font-size:1.6rem; font-weight:500; color: var(--ink); margin-top:4px; }
+.kpi-value.good { color: var(--forest); } .kpi-value.warn { color:#8a6d1f; } .kpi-value.bad { color: var(--coral); }
+
+[data-testid="stDataFrame"] { border-radius:10px; overflow:hidden; border:1px solid var(--hairline); }
+[data-baseweb="select"], .stTextInput input { border-radius:6px !important; }
+[data-testid="stMetricValue"] { color: var(--ink); font-weight: 500; }
+hr, [data-testid="stDivider"] { border-color: var(--hairline) !important; }
 
 @media (max-width: 768px) {
     .block-container { padding-left:0.7rem; padding-right:0.7rem; padding-top: 5.5rem !important; }
-    .dashboard-header { padding: 1rem; border-radius: 8px; margin-bottom: 0.75rem; }
-    .header-title { font-size: 1.15rem; }
-    .header-caption { font-size: 0.75rem; }
-    h2 { font-size: 1.1rem !important; }
-    h3 { font-size: 1rem !important; }
-    .kpi-card {
-        flex: 1 1 calc(50% - 0.75rem);
-        min-width: unset;
-        padding: 0.75rem 1rem;
-    }
-    .kpi-value { font-size: 1.3rem; }
-    .kpi-label { font-size: 0.65rem; }
+    .hdr-wrap h1 { font-size:1.2rem !important; }
+    .hdr-wrap p { font-size:0.72rem; }
+    .kpi-card { flex:1 1 45%; padding:12px; }
+    .kpi-value { font-size:1.25rem; }
+    .kpi-label { font-size:0.62rem; }
+    h2 { font-size:1.1rem !important; } h3 { font-size:0.98rem !important; }
+    [data-testid="stDataFrame"] { font-size: 0.75rem; }
+    .alert-band { padding: 14px 16px; }
 }
 </style>
 """, unsafe_allow_html=True)
@@ -113,10 +100,10 @@ def kpi_row(kpis):
 
 
 def render_banner(title, caption=None):
-    cap_html = f'<div class="header-caption">{caption}</div>' if caption else ""
+    cap_html = f'<p>{caption}</p>' if caption else ""
     st.markdown(
-        f'<div class="dashboard-header">'
-        f'<div class="header-title">{title}</div>{cap_html}'
+        f'<div class="hdr-wrap">'
+        f'<h1>{title}</h1>{cap_html}'
         f'</div>',
         unsafe_allow_html=True,
     )
@@ -132,9 +119,9 @@ d = get_data()
 sites, tasks, milestones, raid, validation = d["sites"], d["tasks"], d["milestones"], d["raid_log"], d["day1_validation"]
 scorecard = d["scorecard"]
 
-GONOGO_COLOR = {"GO": "#2e7d32", "CONDITIONAL GO": "#f9a825", "NO-GO": "#c62828"}
+GONOGO_COLOR = {"GO": "#0a2e0e", "CONDITIONAL GO": "#d9a441", "NO-GO": "#aa2d00"}
 
-st.sidebar.title("📦 LAST MILE LAUNCH\nREADINESS PROGRAM")
+st.sidebar.title("LAST MILE LAUNCH\nREADINESS PROGRAM")
 st.sidebar.caption("5 simulated station launches | Program snapshot: Aug 2026")
 page = st.sidebar.radio("Navigate", [
     "About This Project", "Executive Overview", "Site Readiness", "RAID Log", "Milestone Tracker",
@@ -144,7 +131,7 @@ st.sidebar.divider()
 st.sidebar.caption("Data: synthetic operational dataset generated for this case study. See /data and data_dictionary.md.")
 
 render_banner(
-    "📦 Last Mile Launch Readiness Program",
+    "Last Mile Launch Readiness Program",
     "5 simulated station launches · Program snapshot: August 2026",
 )
 
@@ -238,6 +225,15 @@ and retrospective template are in the GitHub repository:
 elif page == "Executive Overview":
     st.subheader("Executive Launch Dashboard")
     st.caption("Program-level readiness across all 5 concurrent station launches")
+
+    nogo_count = (scorecard.go_no_go == "NO-GO").sum()
+    if nogo_count > 0:
+        st.markdown(f"""
+        <div class="alert-band">
+        <div class="alabel">Program Attention Required</div>
+        <div class="atext">{nogo_count} of {len(scorecard)} sites are tracking NO-GO this week — see the RAID Log for the specific risks driving each score.</div>
+        </div>
+        """, unsafe_allow_html=True)
 
     healthy_sites = (scorecard.go_no_go != "NO-GO").sum()
     critical_risks = int(scorecard["critical_risks"].sum())
